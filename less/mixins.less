@@ -1,10 +1,16 @@
 // Mixins in here
-.buttons(@width, @padding, @font-size, @color, @background, @text-align, @rad) {
-	background-color: @background;
-	color: @color;
+.buttons(@width, @padding, @font-size, @text-align, @rad) {
 	width: @width;
 	padding: @padding;
 	font-size: @font-size;
 	text-align: @text-align;
 	border-radius: @rad;
+}
+
+.darkenBg(@color, @percentage) {
+	background-color: darken(@color, @percentage);
+}
+
+.darkBgFont(@color) {
+	color: @color;
 }
