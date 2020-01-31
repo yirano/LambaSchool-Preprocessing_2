@@ -169,13 +169,22 @@ img {
   margin: 0 auto;
 }
 nav {
+  display: flex;
   width: 100%;
   padding: 20px 100px;
   border-bottom: 2px dashed lightgray;
 }
+nav .left-nav {
+  margin-top: 10px;
+}
+nav .left-nav a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 1.5rem;
+}
 nav ul {
   display: flex;
-  width: inherit;
+  width: 80%;
   justify-content: flex-end;
   position: relative;
 }
@@ -186,13 +195,6 @@ nav ul li a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
-}
-nav ul li:first-child {
-  position: absolute;
-  font-family: 'Indie Flower', cursive;
-  font-weight: 700;
-  left: 0;
-  padding-left: 0;
 }
 .footer {
   width: 100%;

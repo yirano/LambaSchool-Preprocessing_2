@@ -1,10 +1,19 @@
 nav {
+	display: flex;
 	width: 100%;
 	padding: 20px 100px;
 	border-bottom: 2px dashed lightgray;
+	.left-nav {
+		margin-top: 10px;
+		a {
+			text-decoration: none;
+			color: @font-color;
+			font-size: 1.5rem;
+		}
+	}
 	ul {
 		display: flex;
-		width: inherit;
+		width: 80%;
 		justify-content: flex-end;
 		position: relative;
 		li {
@@ -13,13 +22,6 @@ nav {
 				text-decoration: none;
 				color: @font-color;
 				font-size: 1.5rem;
-			}
-			&:first-child {
-				position: absolute;
-				font-family: @fun-font;
-				font-weight: 700;
-				left: 0;
-				padding-left: 0;
 			}
 		}
 	}
