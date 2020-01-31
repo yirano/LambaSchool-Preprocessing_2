@@ -230,6 +230,11 @@ header .header-content {
   padding-bottom: 10px;
   border-bottom: 2px dashed lightgray;
 }
+@media (max-width: 500px) {
+  header .header-content {
+    margin: 0 25px;
+  }
+}
 header .header-content img {
   padding-bottom: 20px;
 }
@@ -239,16 +244,42 @@ header .header-content img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 89%;
+    padding-right: 0;
+    align-self: center;
+    text-align: left;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 92%;
+    padding-right: 0;
+    align-self: center;
+    text-align: center;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -257,14 +288,26 @@ header .header-content img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  order: 1;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  order: 2;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    padding-right: 0;
+  }
 }
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 89%;
+  }
 }
 .home .content-destination img {
   border-radius: 10px;
@@ -275,9 +318,20 @@ header .header-content img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 70%;
+  }
 }
 .home .content-pick .destination .btn {
   width: 82%;
@@ -287,4 +341,10 @@ header .header-content img {
   border-radius: 15px;
   background-color: #117a8b;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    background-color: #17a2b8;
+  }
 }
