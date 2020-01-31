@@ -169,9 +169,7 @@ img {
   margin: 0 auto;
 }
 nav {
-  display: flex;
   width: 100%;
-  padding: 20px 100px;
   border-bottom: 2px dashed #c0c0c0;
 }
 @media (max-width: 500px) {
@@ -179,6 +177,12 @@ nav {
     flex-direction: column;
     padding: 10px 0 0;
   }
+}
+nav .nav-container {
+  padding: 20px 0;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
 }
 nav .left-nav {
   margin-top: 10px;
@@ -227,7 +231,8 @@ nav ul li a {
   padding: 20px;
 }
 header .header-content {
-  margin: 0 100px;
+  margin: 0 auto;
+  max-width: 800px;
   padding-bottom: 10px;
   border-bottom: 2px dashed lightgray;
 }

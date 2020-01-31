@@ -1,12 +1,16 @@
 nav {
-	display: flex;
 	width: 100%;
-	padding: 20px 100px;
 	border-bottom: 2px dashed @navigation-border;
 
 	@media @mobile {
 		flex-direction: column;
 		padding: 10px 0 0;
+	}
+	.nav-container {
+		padding: 20px 0;
+		display: flex;
+		max-width: 800px;
+		margin: 0 auto;
 	}
 	.left-nav {
 		margin-top: 10px;
