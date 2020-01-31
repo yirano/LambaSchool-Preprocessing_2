@@ -3,8 +3,13 @@ nav {
 	width: 100%;
 	padding: 20px 100px;
 	border-bottom: 2px dashed lightgray;
+	@media @mobile {
+		flex-direction: column;
+		padding: 10px 0 0;
+	}
 	.left-nav {
 		margin-top: 10px;
+		.alignText(center);
 		a {
 			text-decoration: none;
 			color: @font-color;
@@ -16,8 +21,15 @@ nav {
 		width: 80%;
 		justify-content: flex-end;
 		position: relative;
+		@media @mobile {
+			width: 100%;
+			justify-content: center;
+		}
 		li {
 			padding: 20px;
+			@media @mobile {
+				padding-bottom: 5px;
+			}
 			a {
 				text-decoration: none;
 				color: @font-color;
