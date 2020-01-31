@@ -172,49 +172,48 @@ nav {
   width: 100%;
   border-bottom: 2px dashed #c0c0c0;
 }
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    padding: 10px 0 0;
-  }
-}
 nav .nav-container {
   padding: 20px 0;
   display: flex;
   max-width: 800px;
   margin: 0 auto;
 }
-nav .left-nav {
-  margin-top: 10px;
-  width: 30%;
-  text-align: center;
+@media (max-width: 500px) {
+  nav .nav-container {
+    flex-direction: column;
+    padding: 10px 0 0;
+  }
 }
-nav .left-nav a {
+nav .nav-container .left-nav {
+  width: 30%;
+  margin: 20px auto 0;
+}
+nav .nav-container .left-nav a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
 }
-nav ul {
+nav .nav-container ul {
   display: flex;
   flex-grow: 1;
   justify-content: flex-end;
   position: relative;
 }
 @media (max-width: 500px) {
-  nav ul {
+  nav .nav-container ul {
     width: 100%;
     justify-content: center;
   }
 }
-nav ul li {
+nav .nav-container ul li {
   padding: 20px;
 }
 @media (max-width: 500px) {
-  nav ul li {
+  nav .nav-container ul li {
     padding-bottom: 5px;
   }
 }
-nav ul li a {
+nav .nav-container ul li a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
