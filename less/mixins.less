@@ -1,1 +1,27 @@
 // Mixins in here
+.buttons(@width, @padding, @font-size, @text-align, @rad) {
+	width: @width;
+	padding: @padding;
+	font-size: @font-size;
+	text-align: @text-align;
+	border-radius: @rad;
+}
+
+.darkenBg(@color, @percentage) {
+	background-color: darken(@color, @percentage);
+}
+
+.darkBgFont(@color) {
+	color: @color;
+}
+
+.alignText(@align) {
+	text-align: @align;
+}
+
+.responsiveTextContent(@width, @padding, @align, @textAlign) {
+	width: @width;
+	padding-right: @padding;
+	align-self: @align;
+	text-align: @textAlign;
+}
